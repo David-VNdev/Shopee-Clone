@@ -20,6 +20,15 @@
     />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="app">
@@ -27,18 +36,56 @@
         <div class="grid">
           <nav class="header__navbar">
             <ul class="header__navbar--list">
-              <li class="header__navbar--item">Go to the app</li>
-              <li class="header__navbar--item">Connect</li>
+              <li
+                class="
+                  header__navbar__link
+                  header__navbar--item
+                  header__navbar--item--seperator
+                "
+              >
+                Download
+              </li>
+              <li class="header__navbar--item header__navbar--social">
+                Follow us on
+                <span class="social-list">
+                  <a href="" class="social-link header__navbar__link"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="" class="social-link header__navbar__link"
+                    ><i class="fab fa-instagram"></i></a
+                ></span>
+              </li>
             </ul>
             <ul class="header__navbar--list">
-              <li class="header__navbar--item">
-                <a href="" class="header__navbar--link">Notification</a>
+              <li class="header__navbar__link header__navbar--item">
+                <a href="" class="header__navbar--link"
+                  ><i class="far fa-bell"></i> Notification</a
+                >
               </li>
-              <li class="header__navbar--item">
-                <a href="" class="header__navbar--link">Help</a>
+              <li class="header__navbar__link header__navbar--item">
+                <a href="" class="header__navbar--link"
+                  ><i class="far fa-question-circle"></i> Help</a
+                >
               </li>
-              <li class="header__navbar--item">Sign up</li>
-              <li class="header__navbar--item">Log in</li>
+              <li
+                class="
+                  header__navbar--item
+                  header__navbar--item--bold
+                  header__navbar--item--seperator
+                  header__navbar__link
+                "
+              >
+                Sign up
+              </li>
+              <li
+                class="
+                  header__navbar__link
+                  header__navbar--item
+                  header__navbar--item--bold
+                "
+              >
+                Log in
+              </li>
             </ul>
           </nav>
         </div>
