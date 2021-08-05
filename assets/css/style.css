@@ -47,3 +47,45 @@
   opacity: 0.7;
   cursor: pointer;
 }
+
+.header__download {
+  position: relative;
+}
+.download_module {
+  width: 184px;
+  margin-top: 10px;
+  padding: 2px;
+  position: absolute;
+}
+
+.header__download:hover {
+  opacity: 1;
+}
+
+.header__download span:hover {
+  opacity: 0.7;
+}
+
+.download_module > div {
+  width: 180;
+  margin: auto;
+}
+
+.header__qr_code img {
+  width: 100%;
+}
+
+.stores {
+  padding: 0 15px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.stores div {
+  display: inline-block;
+  margin-top: 5px;
+  width: 70px;
+}
+.stores div img {
+  width: 100%;
+}
