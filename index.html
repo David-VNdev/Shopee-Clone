@@ -44,15 +44,30 @@
                   header__download
                 "
               >
-                <span>Download</span>
+                <span class="text">Download</span>
+                <!-- Download module -->
                 <div class="download_module">
-                  <div class="header__qr_code">
-                    <img src="./assets/img/qr.png" alt="qr-code" />
-                  </div>
-                  <div class="stores">
-                    <div><img src="./assets/img/apple.png" alt="" /></div>
-                    <div><img src="./assets/img/google.png" alt="" /></div>
-                    <div><img src="./assets/img/app galery.png" alt="" /></div>
+                  <div class="wrapper">
+                    <div class="header__qr_code">
+                      <img src="./assets/img/qr.png" alt="qr-code" />
+                    </div>
+                    <div class="stores">
+                      <div>
+                        <a href="http://apple.com">
+                          <img src="./assets/img/apple.png" alt=""
+                        /></a>
+                      </div>
+                      <div>
+                        <a href="https://google.com">
+                          <img src="./assets/img/google.png" alt=""
+                        /></a>
+                      </div>
+                      <div>
+                        <a href="https://shopee.sg/web">
+                          <img src="./assets/img/app galery.png" alt=""
+                        /></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -68,10 +83,17 @@
               </li>
             </ul>
             <ul class="header__navbar--list">
-              <li class="header__navbar__link header__navbar--item">
+              <li
+                class="
+                  header__navbar__link header__navbar--item header__notification
+                "
+              >
                 <a href="" class="header__navbar--link"
-                  ><i class="far fa-bell"></i> Notification</a
-                >
+                  ><i class="far fa-bell"></i> Notification
+                  <div class="notification_module">
+                    <div class="wapper"></div>
+                  </div>
+                </a>
               </li>
               <li class="header__navbar__link header__navbar--item">
                 <a href="" class="header__navbar--link"
