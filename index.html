@@ -48,7 +48,7 @@
                 <!-- Download module -->
                 <div class="download_module">
                   <div class="wrapper">
-                    <div class="header__qr_code">
+                    <div class="qr-code">
                       <img src="./assets/img/qr.png" alt="qr-code" />
                     </div>
                     <div class="stores">
@@ -83,20 +83,26 @@
               </li>
             </ul>
             <ul class="header__navbar--list">
-              <li
-                class="
-                  header__navbar__link header__navbar--item header__notification
-                "
-              >
-                <a href="" class="header__navbar--link"
-                  ><i class="far fa-bell"></i> Notification
-                  <div class="notification_module">
-                    <div class="wapper"></div>
-                  </div>
+              <li class="header__navbar--item header__notification">
+                <a href="" class="header__navbar__link"
+                  ><i class="far fa-bell"> </i> Notifications
                 </a>
+                <div class="notification_module">
+                  <div class="upper-wrapper">
+                    <div>
+                      <img src="./assets/img/Login notification.png" alt="" />
+                    </div>
+                    <p>Log in to view notifications</p>
+                  </div>
+                  <div class="notification__submenu">
+                    <a href="#" class="menu-item">Sign up</a>
+                    <a href="#" class="menu-item">Log in</a>
+                    <!-- <a href="#">Log in</a> -->
+                  </div>
+                </div>
               </li>
-              <li class="header__navbar__link header__navbar--item">
-                <a href="" class="header__navbar--link"
+              <li class="header__navbar--item">
+                <a href="" class="header__navbar__link"
                   ><i class="far fa-question-circle"></i> Help</a
                 >
               </li>
@@ -107,9 +113,7 @@
                   header__navbar--item--seperator
                   header__navbar__link
                 "
-              >
-                Sign up
-              </li>
+              ></li>
               <li
                 class="
                   header__navbar__link
