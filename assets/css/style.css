@@ -101,10 +101,17 @@
 .header__notification {
   position: relative;
 }
-.header__navbar__link:hover + .notification_module {
+.header__navbar--list:hover .notification_module {
   display: flex;
   transform-origin: top right;
   animation: headerNotificationAppear ease-in 0.25s;
+  -webkit-animation: headerNotificationAppear ease-in 0.25s;
+  -ms-animation: headerNotificationAppear ease-in 0.25s;
+  -o-animation: headerNotificationAppear ease-in 0.25s;
+  -moz-animation: headerNotificationAppear ease-in 0.25s;
+  will-change: opacity, transform;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 50px 0px;
 }
 
 @keyframes headerNotificationAppear {
@@ -128,8 +135,22 @@
   animation: fadeIn ease 0.5s;
   border: rgba(0, 0, 0, 0.09) solid 1px;
   margin: 1px;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 50px 0px;
+}
+
+.header__navbar--item > .notification_module::before {
+  content: "";
+  border: 25px solid transparent;
+  border-bottom: 20px solid var(--white-color);
+  position: absolute;
+  right: 20px;
+  top: -40px;
+}
+.header__navbar--item > .notification_module::after {
+  content: "";
+  border: 50px solid transparent;
+  position: absolute;
+  right: -1px;
+  top: -50px;
 }
 .notification_module .upper-wrapper {
   height: 350px;
