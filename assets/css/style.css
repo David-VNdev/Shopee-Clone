@@ -101,7 +101,7 @@
 .header__notification {
   position: relative;
 }
-.header__navbar--list:hover .notification_module {
+.header__notification:hover .notification_module {
   display: flex;
   transform-origin: top right;
   animation: headerNotificationAppear ease-in 0.25s;
@@ -114,16 +114,6 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 50px 0px;
 }
 
-@keyframes headerNotificationAppear {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 .header__navbar--item > .notification_module {
   width: 402px;
   position: absolute;
@@ -187,4 +177,79 @@
 
 .notification__submenu .menu-item:hover {
   color: #ff0000;
+}
+
+/* Authen modal */
+.auth-form__container {
+  padding: 0 32px;
+}
+
+.auth-form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.auth-form-heading {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.auth-form__switch-btn {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.auth-form__input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  font-size: 1.4rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  outline: none;
+}
+
+.auth-form__input:focus {
+  border-color: #888;
+}
+
+.auth-form__legal {
+  margin-top: 0px;
+}
+
+.auth-form__legal-text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.auth-form__legal-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.auth-form__controls {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.auth-form__controls .btn {
+  margin-left: 8px;
+}
+
+.auth-form__socials {
+  background-color: #f5f5f5;
+  padding: 12px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.auth-form__socials .btn {
+  flex-grow: 1;
 }
