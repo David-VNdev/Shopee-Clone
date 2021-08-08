@@ -4,6 +4,11 @@
   --text-color: #333;
   --primary-color: #ff0000;
   --border-color: #dbdbdb;
+  --navbar-height: 42px;
+  --header-height: 120px;
+  --header-with-search-height: calc(
+    var(--header-height) - var(--navbar-height)
+  );
 }
 
 * {
@@ -79,6 +84,14 @@ h2 {
   }
 }
 
+@keyframes grow {
+  0% {
+    transform: scale(var(--grow-from));
+  }
+  100% {
+    transform: scale(var(--grow-to));
+  }
+}
 /* Modal */
 .modal {
   position: fixed;
@@ -87,6 +100,7 @@ h2 {
   bottom: 0;
   left: 0;
   display: flex;
+  animation: fadeIn 0.1s linear;
 }
 
 .modal__overlay {
@@ -97,8 +111,11 @@ h2 {
 }
 
 .modal__body {
+  --grow-from: 0.7;
+  --grow-to: 1;
   margin: auto;
   z-index: 1;
+  animation: grow linear 0.1s;
 }
 
 .auth-form {
