@@ -23,7 +23,7 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.header__navbar--item--seperator {
+.header__navbar--item--separator {
   border-right: 2px solid rgba(255, 255, 255, 0.44);
 }
 .header__navbar--item--bold {
@@ -225,11 +225,11 @@
   border-color: #888;
 }
 
-.auth-form__legal {
+.auth-form__aside {
   margin-top: 0px;
 }
 
-.auth-form__legal-text {
+.auth-form__aside-text {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: center;
@@ -275,4 +275,28 @@
 
 .auth-form__socials--google {
   color: #666;
+}
+
+.auth-form__help {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.auth-form__help-link {
+  display: inline-block;
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  color: #939393;
+}
+
+.auth-form__help-separator {
+  height: 22px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  margin: 0 16px;
+}
+
+.auth-form__forgot {
+  color: var(--primary-color);
 }
