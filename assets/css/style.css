@@ -349,10 +349,14 @@
   position: absolute;
   top: 100%;
   left: 50%;
-
   transform: translate(-45%, -40%);
+  display: none;
+}
 
+.header__cart:hover:after,
+.header__cart:hover .header__cart-list {
   display: block;
+  animation: fadeIn ease 0.5s;
 }
 .header__cart-list {
   position: absolute;
@@ -362,6 +366,8 @@
   width: 400px;
   padding: 60px 0;
   box-shadow: 0 0 1px #666;
+  border-radius: 2px;
+  display: none;
 }
 
 .header__cart-no-cart-img {
