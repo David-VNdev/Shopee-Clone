@@ -342,18 +342,15 @@
   position: relative;
 }
 
-.header__cart:after {
+.header__cart-list:after {
   content: "";
   border: 20px solid transparent;
   border-bottom: 15px solid var(--white-color);
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-45%, -40%);
-  display: none;
+  bottom: 98%;
+  right: 32px;
 }
 
-.header__cart:hover:after,
 .header__cart:hover .header__cart-list {
   display: block;
   animation: fadeIn ease 0.5s;
