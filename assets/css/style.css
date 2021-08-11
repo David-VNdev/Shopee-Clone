@@ -364,7 +364,7 @@
 
 .header__cart-wrap:hover .header__cart-list {
   display: block;
-  animation: appearGrow ease 0.5s;
+  /* animation: appearGrow ease 0.5s; */
   transform-origin: calc(100% - 32px) 0;
 }
 .header__cart-list:after {
@@ -383,10 +383,13 @@
   right: 20px;
   background-color: var(--white-color);
   width: 400px;
-  padding: 60px 0;
   box-shadow: 0 0 1px #666;
   border-radius: 2px;
-  display: none;
+  display: block;
+}
+
+.header__cart-list.header__cart-no-cart {
+  padding: 60px 0;
 }
 
 .header__cart-no-cart .header__cart-no-cart-img {
