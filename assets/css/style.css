@@ -104,11 +104,11 @@
 .header__notification:hover .notification_module {
   display: flex;
   transform-origin: top right;
-  animation: headerNotificationAppear ease-in 0.25s;
-  -webkit-animation: headerNotificationAppear ease-in 0.25s;
-  -ms-animation: headerNotificationAppear ease-in 0.25s;
-  -o-animation: headerNotificationAppear ease-in 0.25s;
-  -moz-animation: headerNotificationAppear ease-in 0.25s;
+  animation: appearGrow ease-in 0.25s;
+  -webkit-animation: appearGrow ease-in 0.25s;
+  -ms-animation: appearGrow ease-in 0.25s;
+  -o-animation: appearGrow ease-in 0.25s;
+  -moz-animation: appearGrow ease-in 0.25s;
   will-change: opacity, transform;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 50px 0px;
@@ -325,23 +325,48 @@
   flex: 1;
   border-radius: 2px;
   display: flex;
-  /* overflow: hidden; */
   align-items: center;
 }
 
 .header__cart {
   width: 150px;
-  text-align: center;
   position: relative;
+  text-align: center;
+}
+
+.header__cart-wrap {
+  display: inline-block;
+  padding: 0 12px;
 }
 
 .header__cart-icon {
   color: var(--white-color);
   font-size: 2.4rem;
   margin-top: 6px;
+  display: block;
+  cursor: pointer;
   position: relative;
+  z-index: 2;
 }
 
+.header__cart-notice {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 8px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  font-size: 1.6rem;
+  top: -2px;
+  right: 30%;
+  z-index: 2;
+  border: 2px solid #ee4d2d;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+  display: block;
+  animation: appearGrow ease 0.5s;
+  transform-origin: calc(100% - 32px) 0;
+}
 .header__cart-list:after {
   content: "";
   border: 20px solid transparent;
@@ -349,12 +374,9 @@
   position: absolute;
   bottom: 98%;
   right: 32px;
+  font: 1.4rem;
 }
 
-.header__cart:hover .header__cart-list {
-  display: block;
-  animation: fadeIn ease 0.5s;
-}
 .header__cart-list {
   position: absolute;
   top: 46px;
@@ -367,13 +389,22 @@
   display: none;
 }
 
+.header__cart-no-cart .header__cart-no-cart-img {
+  display: inline-block;
+}
+
+.header__cart-no-cart .header__cart-no-cart-text {
+  display: block;
+}
 .header__cart-no-cart-img {
   width: 100px;
+  display: none;
 }
 
 .header__cart-no-cart-text {
   font-size: 1.4rem;
   margin-top: 20px;
+  display: none;
 }
 .header__search-input-wrap {
   flex: 1;
