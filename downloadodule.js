@@ -1,5 +1,5 @@
 var element = document.querySelector(
-  "#main > div > div._193wCc._3cVWns > div.shopee-top.shopee-top--sticky > div.container-wrapper.header-with-search-wrapper > div > div.header-with-search__cart-wrapper > div > div > div"
+  "#main > div > div._193wCc > div.shopee-top.container-wrapper > div.ofs-header.container-wrapper > div > div > div.ofs-header__right > div.ofs-header__cart-wrapper > div > div > div > a"
 );
 
 element.addEventListener("mouseover", function () {
