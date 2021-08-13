@@ -437,6 +437,7 @@
 .header__cart-img {
   height: 40px;
   width: 40px;
+  border: 1px solid #e8e8e8;
 }
 .header__cart-item-info {
   flex: 1;
@@ -487,6 +488,15 @@
 .header__cart-item-remove:hover {
   color: var(--primary-color);
   cursor: pointer;
+}
+
+.header__cart-view-cart {
+  float: right;
+  margin: 0 12px 12px 0;
+}
+
+.header__cart-view-cart:hover {
+  background-color: #f05d41;
 }
 /* search */
 .header__search-input-wrap {

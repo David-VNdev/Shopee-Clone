@@ -105,7 +105,9 @@
                   ><i class="far fa-question-circle"></i> Help</a
                 >
               </li>
-              <li
+
+              <!-- Not signed in -->
+              <!-- <li
                 class="
                   header__navbar--item
                   header__navbar--item--bold
@@ -123,6 +125,12 @@
                 "
               >
                 Log in
+              </li> -->
+
+              <li class="header__navbar--item header__navbar-user">
+                <a href="" class="header__navbar__link"
+                  ><i class="far fa-question-circle"></i> Help</a
+                >
               </li>
             </ul>
           </nav>
@@ -224,9 +232,32 @@
                         </div>
                       </div>
                     </li>
+                    <li class="header__cart-item">
+                      <img
+                        src="./assets/img/kindle.jpg"
+                        alt="kindle"
+                        class="header__cart-img"
+                      />
+                      <div class="header__cart-item-info">
+                        <div class="header__cart-item-head">
+                          <h5 class="header__cart-item-name">Kindle cover</h5>
+                          <span class="header__cart-item-price">$300 </span>
+                          <span class="header__cart-item-cross"> x </span>
+                          <span class="header__cart-item-qnt"> 2 </span>
+                        </div>
+                        <div class="header__cart-item-body">
+                          <span class="header__cart-item-description">
+                            Type: Bronze
+                          </span>
+                          <span class="header__cart-item-remove"> Remove </span>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
 
-                  <button class="btn btn--primary">See cart</button>
+                  <a href="#" class="header__cart-view-cart btn btn--primary">
+                    View cart
+                  </a>
                 </div>
               </div>
             </div>
