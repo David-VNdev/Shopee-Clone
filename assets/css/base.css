@@ -48,6 +48,8 @@ h2 {
 .pl-16 {
   padding-left: 16px !important;
 }
+
+/* Responsive */
 .grid {
   width: 1200px;
   max-width: 100%;
@@ -58,11 +60,29 @@ h2 {
   width: 100%;
 }
 
-.grid-row {
+.grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
+.grid__column {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+/* Test */
+.grid__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 2);
+}
+
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: calc(100% / 12 * 10);
+}
 /* animation */
 @keyframes fadeIn {
   0% {
@@ -134,7 +154,7 @@ h2 {
   cursor: pointer;
   color: var(--text-color);
   background-color: var(--white-color);
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
   align-items: center;
 }
