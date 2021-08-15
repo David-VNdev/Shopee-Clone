@@ -309,29 +309,40 @@
             <div class="grid__column-10">
               <div class="home-filter">
                 <span class="home-filter__label">Sorted by</span>
-                <button class="btn">Relevance</button>
-                <button class="btn btn--primary">Latest</button>
-                <button class="btn">Top Sales</button>
+                <button class="home-filter__btn btn">Relevance</button>
+                <button class="home-filter__btn btn btn--primary">
+                  Latest
+                </button>
+                <button class="home-filter__btn btn">Top Sales</button>
                 <div class="select-input">
                   <span class="select-input__label">Price</span>
-                  <i class="header__search-select-icon fas fa-chevron-down"></i>
+                  <i class="fas fa-chevron-down"></i>
+                  <!-- List option -->
+                  <ul class="select-input__list">
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">From low to high</a>
+                    </li>
+                    <li class="select-input__item">
+                      <a href="" class="select-input__link">From high to low</a>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="home-filter__page">
                   <span class="home-filter__page-num">
-                    <span class="home-filter__page-current">1</span>
-                    /14
+                    <span class="home-filter__page-current">1</span>/14
                   </span>
                   <div class="home-filter__page-control">
-                    <a href="" class="home-filter__page-btn">
-                      <i
-                        class="header__search-select-icon fas fa-chevron-left"
-                      ></i>
+                    <a
+                      href=""
+                      class="
+                        home-filter__page-btn home-filter__page-btn--disabled
+                      "
+                    >
+                      <i class="fas fa-chevron-left"></i>
                     </a>
                     <a href="" class="home-filter__page-btn">
-                      <i
-                        class="header__search-select-icon fas fa-chevron-right"
-                      ></i>
+                      <i class="fas fa-chevron-right"></i>
                     </a>
                   </div>
                 </div>
