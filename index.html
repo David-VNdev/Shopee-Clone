@@ -18,8 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="./assets/css/all.css" />
     <link
@@ -29,6 +28,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="app">
@@ -370,9 +372,26 @@
                         >
                       </div>
                       <div class="home-product-item__actions">
-                        <span class="home-product-item__like">
-                          <i class="far fa-heart"></i>
-                          <!-- <i class="fas fa-heart"></i> -->
+                        <span
+                          class="
+                            home-product-item__like
+                            home-product-item__like--liked
+                          "
+                        >
+                          <i
+                            class="
+                              home-product-item__like-icon-empty
+                              far
+                              fa-heart
+                            "
+                          ></i>
+                          <i
+                            class="
+                              home-product-item__like-icon-fill
+                              fas
+                              fa-heart
+                            "
+                          ></i>
                         </span>
                         <div class="home-product-item__rating">
                           <i class="fas fa-star"></i>
@@ -384,7 +403,7 @@
                       </div>
                       <div class="home-product-item__origin">
                         <span class="home-product-item__brand">Whoo</span>
-                        <span class="home-product-item__origin-name"></span>
+                        <span class="home-product-item__origin-name">USA</span>
                       </div>
                       <div class="home-product-item__favourite">
                         <i class="fas fa-check"></i>
