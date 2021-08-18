@@ -1084,3 +1084,9 @@
   font-size: 1.3rem;
   color: var(--white-color);
 }
+
+/* Pagination */
+.home-product__pagination {
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
