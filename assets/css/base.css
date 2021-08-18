@@ -220,6 +220,8 @@ h2 {
   margin: 0;
   padding: 8px 16px;
   display: none;
+  z-index: 1;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .select-input__list:before {
