@@ -104,12 +104,38 @@ body {
     width: 95%;
     padding-top: 85%;
   }
+
+  /* Courses */
+  .column-item {
+    width: 50%;
+    padding: 0 16px;
+  }
+
+  .column-layout__category {
+    display: none;
+  }
+
+  .column-layout__container {
+    width: 100%;
+  }
+  /* Features */
+
+  .feature-layout {
+    flex-direction: column;
+  }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  /* Product */
   .main__product-img {
     width: 85%;
     padding-top: 85%;
+  }
+
+  /* Courses */
+  .column-item {
+    width: 33.3%;
+    padding: 0 16px;
   }
 }
