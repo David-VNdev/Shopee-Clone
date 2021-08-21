@@ -7,7 +7,7 @@
   --star-gold-color: #ffce3e;
   --navbar-height: 42px;
   --header-height: 120px;
-
+  --header-sort-bar-height: 46px;
   --header-with-search-height: calc(
     var(--header-height) - var(--navbar-height)
   );
@@ -52,15 +52,6 @@ h2 {
 }
 
 /* Responsive */
-.grid {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
 
 .grid__row {
   display: flex;
