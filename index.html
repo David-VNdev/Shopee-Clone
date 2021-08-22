@@ -160,6 +160,10 @@
 
           <!-- Header with search -->
           <div class="header-with-search">
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+              <i class="header__mobile-search-icon fas fa-search"></i>
+            </label>
+
             <div class="header__logo hide-on-tablet">
               <a href="/" class="header__logo-link">
                 <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -171,48 +175,53 @@
                 </svg>
               </a>
             </div>
+            <input type="checkbox" hidden id="mobile-search-checkbox" />
+            <div class="header__search">
+              <div class="header__search-wrap">
+                <div class="header__search-input-wrap">
+                  <input
+                    type="text"
+                    class="header__search-input"
+                    placeholder="Search your products"
+                  />
+                  <!-- Search history -->
+                  <div class="header__search-history">
+                    <h3 class="header__search-history-title">Search history</h3>
+                    <ul class="history-list">
+                      <li class="history-item">
+                        <a href="">Kindle Paperwhite</a>
+                      </li>
+                      <li class="history-item">
+                        <a href="">Apple Ipad</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="header__search hide-on-mobile">
-              <div class="header__search-input-wrap">
-                <input
-                  type="text"
-                  class="header__search-input"
-                  placeholder="Search your products"
-                />
-                <!-- Search history -->
-                <div class="header__search-history">
-                  <h3 class="header__search-history-title">Search history</h3>
-                  <ul class="history-list">
-                    <li class="history-item">
-                      <a href="">Kindle Paperwhite</a>
+                <div class="header__search-select">
+                  <span class="header__search-select-label">In store </span
+                  ><i
+                    class="header__search-select-icon fas fa-chevron-down"
+                  ></i>
+
+                  <ul class="header__search-option">
+                    <li
+                      class="
+                        header__search-option-item
+                        header__search-option-item--active
+                      "
+                    >
+                      <span>In store</span><i class="fas fa-check"></i>
                     </li>
-                    <li class="history-item">
-                      <a href="">Apple Ipad</a>
+                    <li class="header__search-option-item">
+                      <span>In shopee</span><i class="fas fa-check"></i>
                     </li>
                   </ul>
                 </div>
+                <button class="header-search-btn">
+                  <i class="header-search-btn-icon fas fa-search"></i>
+                </button>
               </div>
-              <div class="header__search-select">
-                <span class="header__search-select-label">In store </span
-                ><i class="header__search-select-icon fas fa-chevron-down"></i>
-
-                <ul class="header__search-option">
-                  <li
-                    class="
-                      header__search-option-item
-                      header__search-option-item--active
-                    "
-                  >
-                    <span>In store</span><i class="fas fa-check"></i>
-                  </li>
-                  <li class="header__search-option-item">
-                    <span>In shopee</span><i class="fas fa-check"></i>
-                  </li>
-                </ul>
-              </div>
-              <button class="header-search-btn">
-                <i class="header-search-btn-icon fas fa-search"></i>
-              </button>
             </div>
             <!-- Cart layout -->
             <div class="header__cart">
