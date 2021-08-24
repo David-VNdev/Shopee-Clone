@@ -945,7 +945,7 @@
 .mobile-category__link {
   --line-height: 2rem;
   display: block;
-
+  padding: 0 6px;
   text-decoration: none;
   color: var(--white-color);
   font-size: 1.4rem;

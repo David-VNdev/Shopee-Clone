@@ -1,5 +1,9 @@
 @media (min-width: 1024px) {
-  .hide-on-pc {
+  .header__mobile-search {
+    display: none;
+  }
+
+  .mobile-category__list {
     display: none;
   }
 }
@@ -49,6 +53,14 @@
   .header__sort-item--active {
     border-bottom: 1px solid var(--primary-color);
   }
+  .mobile-search-checkbox {
+    display: none;
+  }
+
+  .header__logo-link {
+    position: relative;
+    bottom: 4px;
+  }
 }
 
 /* PC */
@@ -62,6 +74,10 @@
   .header__cart {
     width: 80px;
     text-align: right;
+  }
+
+  .header__mobile-search {
+    display: none;
   }
 }
 
@@ -106,7 +122,16 @@
     height: 46px;
     display: none;
   }
-
+  @keyframes mobileSearchSideIn {
+    from {
+      opacity: 0;
+      top: calc(var(--header-height) / 2);
+    }
+    to {
+      opacity: 1;
+      top: var(--header-height);
+    }
+  }
   .header-search-btn {
     height: 30px;
     width: 50px;
@@ -132,14 +157,24 @@
   .app-content {
     margin: 0 4px;
   }
-  @keyframes mobileSearchSideIn {
-    from {
-      opacity: 0;
-      top: calc(var(--header-height) / 2);
-    }
-    to {
-      opacity: 1;
-      top: var(--header-height);
-    }
+
+  .header__logo-img {
+    width: 110px;
+  }
+
+  .footer__content {
+    padding: 0 16px;
+  }
+
+  .footer__heading {
+    text-align: center;
+  }
+  .footer__download,
+  .footer-item__link {
+    justify-content: center;
+  }
+
+  .footer__download-apps {
+    justify-content: space-around;
   }
 }
